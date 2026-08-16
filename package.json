@@ -1,1 +1,26 @@
-{"name":"digimon-time-stranger-companion-complete","version":"1.0.0","private":true,"type":"module","scripts":{"data:import":"tsx scripts/import-dataset.ts","data:import:cached":"tsx scripts/import-dataset.ts --input data/source.json","data:validate":"tsx scripts/validate-dataset.ts","data:export:sql":"tsx scripts/export-postgres.ts","cheats:merge:switch":"node scripts/merge-switch-cheats.mjs","test":"npm run data:validate","build":"tsc --noEmit"},"devDependencies":{"@types/node":"^24.0.0","tsx":"^4.20.0","typescript":"^5.9.0"}}
+{
+  "name": "digimon-time-stranger-companion",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:import:gamefaqs": "tsx scripts/import-gamefaqs.ts",
+    "db:validate": "tsx scripts/validate-dataset.ts",
+    "data:export": "tsx scripts/export-snapshot.ts",
+    "artwork:import": "tsx scripts/import-artwork-manifest.ts",
+    "cheats:merge:switch": "node scripts/merge-switch-cheats.mjs"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.19.3",
+    "cheerio": "^1.1.2",
+    "prisma": "^6.14.0",
+    "tsx": "^4.20.0",
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,22 @@
+import snapshot from './dataset.generated.json';
+
+type Row=Record<string,any>&{id:number;slug:string;name:string;stage:string;attribute:string;type?:string;fieldGuideNo?:number;isDlc?:boolean};
+type Edge=Record<string,any>&{id:number;fromDigimonId:number;toDigimonId:number};
+const digimon=snapshot.digimon as Row[],evolutions=snapshot.evolutions as Edge[],byId=new Map(digimon.map(d=>[d.id,d])),bySlug=new Map(digimon.map(d=>[d.slug,d]));
+const count=(values:(string|undefined)[])=>[...new Set(values.filter(Boolean) as string[])].map(value=>({value,count:values.filter(x=>x===value).length}));
+const detail=(slug:string)=>{const found=bySlug.get(slug);if(!found)return null;return{...found,fromEdges:evolutions.filter(e=>e.fromDigimonId===found.id).map(e=>({...e,toDigimon:byId.get(e.toDigimonId)})),toEdges:evolutions.filter(e=>e.toDigimonId===found.id).map(e=>({...e,fromDigimon:byId.get(e.fromDigimonId)}))}};
+
+function graph(slug:string,depth:number){const start=bySlug.get(slug);if(!start)return null;const nodes=new Map([[start.id,start]]),edges=new Map<number,Edge>();let frontier=[start.id],seen=new Set(frontier);for(let i=0;i<Math.min(Math.max(depth,1),7)&&frontier.length;i++){const next=new Set<number>();for(const edge of evolutions)if(frontier.includes(edge.fromDigimonId)||frontier.includes(edge.toDigimonId)){edges.set(edge.id,edge);for(const id of[edge.fromDigimonId,edge.toDigimonId]){const row=byId.get(id);if(row)nodes.set(id,row);if(!seen.has(id)){seen.add(id);next.add(id)}}}frontier=[...next]}return{nodes:[...nodes.values()],edges:[...edges.values()]}}
+function path(fromSlug:string,toSlug:string,allowDevolution:boolean){const from=bySlug.get(fromSlug),to=bySlug.get(toSlug);if(!from||!to)return null;const adj=new Map<number,{id:number;edge:Edge;direction:'up'|'down'}[]>(),add=(a:number,b:number,edge:Edge,direction:'up'|'down')=>adj.set(a,[...(adj.get(a)??[]),{id:b,edge,direction}]);for(const edge of evolutions){add(edge.fromDigimonId,edge.toDigimonId,edge,'up');if(allowDevolution)add(edge.toDigimonId,edge.fromDigimonId,edge,'down')}const queue=[from.id],previous=new Map<number,{id:number|null;edge?:Edge;direction?:'up'|'down'}>([[from.id,{id:null}]]);while(queue.length){const current=queue.shift()!;if(current===to.id)break;for(const next of adj.get(current)??[])if(!previous.has(next.id)){previous.set(next.id,{id:current,edge:next.edge,direction:next.direction});queue.push(next.id)}}if(!previous.has(to.id))return{path:[],steps:[]};const ids:number[]=[];for(let current:number|null=to.id;current!==null;current=previous.get(current)?.id??null)ids.push(current);ids.reverse();return{path:ids.map(id=>byId.get(id)),steps:ids.slice(1).map((id,index)=>({from:byId.get(ids[index]),to:byId.get(id),direction:previous.get(id)?.direction,requirement:previous.get(id)?.edge}))}}
+
+export function staticApiGet(pathname:string){const url=new URL(pathname,'http://static.local'),parts=url.pathname.split('/').filter(Boolean);if(parts[0]==='digimon'){
+  if(parts[1]==='facets')return{total:digimon.length,dlc:digimon.filter(d=>d.isDlc).length,stages:count(digimon.map(d=>d.stage)),attributes:count(digimon.map(d=>d.attribute)),types:count(digimon.map(d=>d.type)).sort((a,b)=>a.value.localeCompare(b.value))};
+  if(parts[1]==='status')return{version:snapshot.version,total:digimon.length,evolutions:evolutions.length,withImages:digimon.filter(d=>d.imageUrl).length,dlc:digimon.filter(d=>d.isDlc).length,checkedAt:new Date().toISOString()};
+  if(parts[1]==='snapshot')return snapshot;
+  if(parts[1])return detail(parts[1]);
+  const q=(url.searchParams.get('q')??'').toLowerCase(),stage=url.searchParams.get('stage'),attribute=url.searchParams.get('attribute'),type=url.searchParams.get('type')?.toLowerCase(),dlc=url.searchParams.get('dlc'),take=Math.min(Math.max(Number(url.searchParams.get('take')??100),1),500);return digimon.filter(d=>(!q||d.name.toLowerCase().includes(q)||(d.type??'').toLowerCase().includes(q))&&(!stage||d.stage===stage)&&(!attribute||d.attribute===attribute)&&(!type||(d.type??'').toLowerCase().includes(type))&&(dlc==null||String(Boolean(d.isDlc))===dlc)).slice(0,take);
+ }
+ if(parts[0]==='evolution'&&parts[1]==='graph'&&parts[2])return graph(parts[2],Number(url.searchParams.get('depth')??3));
+ if(parts[0]==='evolution'&&parts[1]==='path')return path(url.searchParams.get('from')??'',url.searchParams.get('to')??'',url.searchParams.get('devolve')!=='false');
+ return null;
+}

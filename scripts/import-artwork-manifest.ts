@@ -1,0 +1,4 @@
+import {PrismaClient} from '@prisma/client';import fs from 'node:fs/promises';
+type Row={slug:string;imageUrl:string;license?:string;source?:string};
+const prisma=new PrismaClient();
+async function main(){const file=process.argv[2];if(!file)throw new Error('Usage: pnpm artwork:import path/to/artwork-manifest.json');const rows=JSON.parse(await fs.readFile(file,'utf8')) as Row[];if(!Array.isArray(rows))throw new Error('Manifest must be an array.');let updated=0;for(const r of rows){if(!r.slug||!/^https?:\/\//.test(r.imageUrl))continue;const exists=await prisma.digimon.findUnique({where:{slug:r.slug}});if(!exists)continue;await prisma.digimon.update({where:{slug:r.slug},data:{imageUrl:r.imageUrl}});updated++;}console.log(`Updated artwork URLs for ${updated}/${rows.length} rows.`)}main().finally(()=>prisma.$disconnect());

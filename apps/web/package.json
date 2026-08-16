@@ -1,0 +1,23 @@
+{
+  "name": "@dts/web",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "lint": "tsc --noEmit",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.11.2",
+    "next": "16.2.11",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  }
+}

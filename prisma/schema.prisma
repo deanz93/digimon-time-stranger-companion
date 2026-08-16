@@ -1,0 +1,116 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model DatasetVersion {
+  id          Int      @id @default(autoincrement())
+  version     String   @unique
+  gameVersion String?
+  sourceName  String?
+  sourceUrl   String?
+  notes       String?
+  isActive    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Digimon {
+  id              Int         @id @default(autoincrement())
+  fieldGuideNo    Int?        @unique
+  name            String      @unique
+  slug            String      @unique
+  stage           String
+  attribute       String
+  type            String?
+  imageUrl        String?
+  description     String?
+  basePersonality String?
+  ridable         Boolean?
+  hp1             Int?
+  sp1             Int?
+  atk1            Int?
+  def1            Int?
+  int1            Int?
+  spi1            Int?
+  speed1          Int?
+  hp99            Int?
+  sp99            Int?
+  atk99           Int?
+  def99           Int?
+  int99           Int?
+  spi99           Int?
+  speed99         Int?
+  isDlc           Boolean     @default(false)
+  dlcWave         String?
+  fromEdges       Evolution[] @relation("FromDigimon")
+  toEdges         Evolution[] @relation("ToDigimon")
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@index([stage])
+  @@index([attribute])
+  @@index([type])
+}
+
+model Evolution {
+  id            Int      @id @default(autoincrement())
+  fromDigimonId Int
+  toDigimonId   Int
+  level         Int?
+  hp            Int?
+  sp            Int?
+  atk           Int?
+  def           Int?
+  int           Int?
+  spi           Int?
+  speed         Int?
+  talent        Int?
+  bond          Int?
+  agentRank     Int?
+  special       String?
+  method        String   @default("digivolution")
+  sourceNote    String?
+  fromDigimon   Digimon  @relation("FromDigimon", fields: [fromDigimonId], references: [id], onDelete: Cascade)
+  toDigimon     Digimon  @relation("ToDigimon", fields: [toDigimonId], references: [id], onDelete: Cascade)
+
+  @@unique([fromDigimonId, toDigimonId])
+  @@index([fromDigimonId])
+  @@index([toDigimonId])
+}
+
+model User {
+  id           String      @id @default(cuid())
+  username     String      @unique
+  passwordHash String
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  sessions     Session[]
+  state        UserState?
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model UserState {
+  id         String   @id @default(cuid())
+  userId     String   @unique
+  collection Json     @default("[]")
+  team       Json     @default("[]")
+  favorites  Json     @default("[]")
+  settings   Json     @default("{}")
+  updatedAt  DateTime @updatedAt
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

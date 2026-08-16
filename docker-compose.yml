@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: dts
+      POSTGRES_USER: dts
+      POSTGRES_PASSWORD: dts
+    ports: ["5432:5432"]
+    volumes: ["dts_pg:/var/lib/postgresql/data"]
+  api:
+    build: {context: ., dockerfile: apps/api/Dockerfile}
+    environment:
+      DATABASE_URL: postgresql://dts:dts@postgres:5432/dts
+      PORT: 4000
+    ports: ["4000:4000"]
+    depends_on: [postgres]
+  web:
+    build: {context: ., dockerfile: apps/web/Dockerfile}
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000
+    ports: ["3000:3000"]
+    depends_on: [api]
+volumes: {dts_pg: {}}

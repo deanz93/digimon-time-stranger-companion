@@ -153,6 +153,8 @@ pnpm artwork:import ./my-artwork-manifest.json
 ### CI / deployment
 GitHub Actions workflows are included for TypeScript/build validation and optional Vercel deployment. Configure `VERCEL_TOKEN`, `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` as repository secrets before enabling the deploy workflow.
 
+For a frontend-only Vercel deployment, set the Vercel project Root Directory to `apps/web`. The web app contains a generated read-only snapshot (`apps/web/lib/dataset.generated.json`) and local Next.js API routes, so the Field Guide, evolution graph/planner, teams, collection, guides, and cheat workspace work without exposing a private PostgreSQL server. Set `API_INTERNAL_URL` only when deploying a separately hosted API. Account sign-in and cloud synchronization require that hosted API plus `DATABASE_URL`; otherwise local/offline state remains available.
+
 ## Database update after upgrading from Phase 5
 
 Phase 6 adds `User`, `Session` and `UserState` tables. Run:
