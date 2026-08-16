@@ -1,0 +1,2 @@
+import TeamClient from '../../components/TeamClient';
+export default function Team(){return <main><header className="page-heading"><div><div className="eyebrow">Squad planning</div><h1>Team Builder</h1><p className="muted">Plan three active Digimon and three reserves, then review attribute and type coverage.</p></div><div className="count-pill"><strong>6</strong> roster slots</div></header><TeamClient/></main>}

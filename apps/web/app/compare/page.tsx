@@ -1,0 +1,1 @@
+import CompareClient from '../../components/CompareClient';export default function Page(){return <main><div className="page-heading"><div><span className="eyebrow">Side by side</span><h1>Compare Digimon</h1><p className="muted">Compare level 99 stats, attributes, stages, and types.</p></div></div><CompareClient/></main>}

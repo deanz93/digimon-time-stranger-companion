@@ -1,0 +1,20 @@
+[Unit]
+Description=Digimon Time Stranger Companion Web
+After=network-online.target dts-api.service
+Wants=network-online.target
+Requires=dts-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/root/projects/digimon-time-stranger-companion
+EnvironmentFile=/root/projects/digimon-time-stranger-companion/.env
+Environment=NODE_ENV=production
+Environment=HOSTNAME=0.0.0.0
+Environment=PORT=3000
+Environment=PATH=/root/.nvm/versions/node/v22.23.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/root/.nvm/versions/node/v22.23.2/bin/pnpm --filter @dts/web start --hostname 0.0.0.0
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1362 @@
+<div class="table-responsive my-5">
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_1">
+				<strong>Breeze beta108.7a Digimon Story Time Stranger 1.2.1 TID: 010062E01FE0C000 BID: 8567DF0B7DC16822</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre></pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_2">
+				<strong>MASTER RESTORE/OFF ENABLE</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005D664C B9001A68 
+04000000 005D6A4C B9002268
+04000000 005D5E6C 29432408
+04000000 00015690 6B08013F
+04000000 000156EC 4B010129
+04000000 005329EC B9405800 
+04000000 005329AC 6B09011F 
+04000000 0052A358 B9400D4B 
+04000000 0052AF70 6B14014A 
+04000000 00532D50 B9405C00 
+04000000 002515D8 B94076D9 
+04000000 005329A8 0B010108 
+04000000 00051518 0B0802E8 
+04000000 00015684 0B01014A 
+04000000 00052B00 2A1C03E2 
+04000000 0050A5E0 2A0203F5 
+04000000 00051440 0B080128 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_3">
+				<strong>--SectionStart: Battle Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_4">
+				<strong>Inf HP = 9999</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005D664C B9001A68 
+04000000 005D664C 1421FAAD 
+04000000 00E55100 A9376BF9 
+04000000 00E55104 B9400E79 
+04000000 00E55108 F100073F 
+04000000 00E5510C 54000041 
+04000000 00E55110 5284E1E8 
+04000000 00E55114 B9001A68 
+04000000 00E55118 A9776BF9 
+04000000 00E5511C 17DE054D 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_5">
+				<strong>Inf SP = 9999</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005D6A4C B9002268 
+04000000 005D6A4C 1421F9B5 
+04000000 00E55120 A9376BF9 
+04000000 00E55124 B9400E79 
+04000000 00E55128 F100073F 
+04000000 00E5512C 54000041 
+04000000 00E55130 5284E1E8 
+04000000 00E55134 B9002268 
+04000000 00E55138 A9776BF9 
+04000000 00E5513C 17DE0645 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_6">
+				<strong> (Hold ZL) HP = 10 (Scanned Enemy)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005D5E6C 29432408 
+80000100 
+04000000 005D5E6C 29432408 
+04000000 005D5E6C 14B933AB 
+04000000 03422D18 18000068 
+04000000 03422D1C 29032408 
+04000000 03422D20 1746CC54 
+04000000 03422D24 0000000A 
+20000000
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_7">
+				<strong>Get Max CP X-Arts</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015690 2A0803E9 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_8">
+				<strong>Inf Use CP X-Arts Not Decrease</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 000156EC 4B1F0129
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_9">
+				<strong>--SectionEnd: Battle Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_10">
+				<strong>--SectionStart: Misc.Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+                    <div class="my-3 text-center" style="min-height: 90px;">
+                        <div class="d-none d-md-block">
+    
+        <div data-pw-desk="leaderboard_btf" id="pwDeskLbBtf1"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwDeskLbBtf1");
+            })
+        </script>
+    
+</div>
+                        <div class="d-md-none">
+    
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf1"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwMobiLbBtf1");
+            })
+        </script>
+    
+</div>
+                    </div>
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_11">
+				<strong>Money 1M (View Menu)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329EC B9405800 
+04000000 005329EC 14BBC0D7 
+04000000 03422D48 A9376BF9 
+04000000 03422D4C 180000B9 
+04000000 03422D50 B9005819 
+04000000 03422D54 B9405800 
+04000000 03422D58 A9776BF9 
+04000000 03422D5C 17443F25 
+04000000 03422D60 000F4240 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_12">
+				<strong>Get Maximum Money</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329AC 2A0903E8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_13">
+				<strong>Have Exist Items = 99 Qty (View Menu)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0052A358 B9400D4B 
+04000000 0052A358 1424AB7A 
+04000000 00E55140 1800006B 
+04000000 00E55144 B9000D4B 
+04000000 00E55148 17DB5485 
+04000000 00E5514C 00000063 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_14">
+				<strong>Use Items Not Decrease</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0052AF70 6B1F014A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_15">
+				<strong>Use Items Increase Qty</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0052AF70 2B14014A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_16">
+				<strong>Anomaly Points = 100</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00532D50 B9405C00 
+04000000 00532D50 14BBBFF6 
+04000000 03422D28 A9376BF9 
+04000000 03422D2C 180000B9 
+04000000 03422D30 B9005C19 
+04000000 03422D34 B9405C00 
+04000000 03422D38 A9776BF9 
+04000000 03422D3C 17444006 
+04000000 03422D40 00000064 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_17">
+				<strong> (Hold ZR) Enhance All Attributes (Blue Values) = 1000</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 002515D8 B94076D9 
+80000200 
+04000000 002515D8 B94076D9 
+04000000 002515D8 14C745E4 
+04000000 03422D68 18000159 
+04000000 03422D6C B900B6D9 
+04000000 03422D70 B900BAD9 
+04000000 03422D74 B900BED9 
+04000000 03422D78 B900C2D9 
+04000000 03422D7C B900C6D9 
+04000000 03422D80 B900CAD9 
+04000000 03422D84 B900CED9 
+04000000 03422D88 B94076D9 
+04000000 03422D8C 1738BA14 
+04000000 03422D90 000003E8 
+20000000
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_18">
+				<strong>--SectionEnd: Misc.Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_19">
+				<strong>--SectionStart: Multiplier Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_20">
+				<strong>Money Multi x2</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B010508 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+                    <div class="my-3 text-center" style="min-height: 90px;">
+                        <div class="d-none d-md-block">
+    
+        <div data-pw-desk="leaderboard_btf" id="pwDeskLbBtf2"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwDeskLbBtf2");
+            })
+        </script>
+    
+</div>
+                        <div class="d-md-none">
+    
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf2"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwMobiLbBtf2");
+            })
+        </script>
+    
+</div>
+                    </div>
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_21">
+				<strong>Money Multi x4</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B010908 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_22">
+				<strong>Money Multi x8</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B010D08 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_23">
+				<strong>Money Multi x16</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B011108 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_24">
+				<strong>Money Multi x32</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B011508 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_25">
+				<strong>Money Multi x64</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B011908 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_26">
+				<strong>Money Multi x128</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 005329A8 0B011D08 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_27">
+				<strong>Get Money x2 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B0806E8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_28">
+				<strong>Get Money x4 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B080AE8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_29">
+				<strong>Get Money x8 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B080EE8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_30">
+				<strong>Get Money x16 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B0812E8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+                    <div class="my-3 text-center" style="min-height: 90px;">
+                        <div class="d-none d-md-block">
+    
+        <div data-pw-desk="leaderboard_btf" id="pwDeskLbBtf3"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwDeskLbBtf3");
+            })
+        </script>
+    
+</div>
+                        <div class="d-md-none">
+    
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf3"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwMobiLbBtf3");
+            })
+        </script>
+    
+</div>
+                    </div>
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_31">
+				<strong>Get Money x32 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B0816E8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_32">
+				<strong>Get Money x64 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B081AE8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_33">
+				<strong>Get Money x128 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051518 0B081EE8 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_34">
+				<strong>CP X-Arts x2</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01054A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_35">
+				<strong>CP X-Arts x4</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01094A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_36">
+				<strong>CP X-Arts x8</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B010D4A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_37">
+				<strong>CP X-Arts x16</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01114A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_38">
+				<strong>CP X-Arts x32</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01154A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_39">
+				<strong>CP X-Arts x64</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01194A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_40">
+				<strong>CP X-Arts x128</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B011D4A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+                    <div class="my-3 text-center" style="min-height: 90px;">
+                        <div class="d-none d-md-block">
+    
+        <div data-pw-desk="leaderboard_btf" id="pwDeskLbBtf4"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwDeskLbBtf4");
+            })
+        </script>
+    
+</div>
+                        <div class="d-md-none">
+    
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf4"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwMobiLbBtf4");
+            })
+        </script>
+    
+</div>
+                    </div>
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_41">
+				<strong>CP X-Arts x256</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00015684 0B01214A 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_42">
+				<strong>EXP Multi x2</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B020455 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_43">
+				<strong>EXP Multi x4</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B020855 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_44">
+				<strong>EXP Multi x8</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B020C55 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_45">
+				<strong>EXP Multi x16</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B021055 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_46">
+				<strong>EXP Multi x32</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B021455 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_47">
+				<strong>EXP Multi x64</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B021855 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_48">
+				<strong>EXP Multi x128</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 0050A5E0 0B021C55 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_49">
+				<strong>Get EXP x2 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B080528 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_50">
+				<strong>Get EXP x4 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B080928 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+                    <div class="my-3 text-center" style="min-height: 90px;">
+                        <div class="d-none d-md-block">
+    
+        <div data-pw-desk="leaderboard_btf" id="pwDeskLbBtf5"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwDeskLbBtf5");
+            })
+        </script>
+    
+</div>
+                        <div class="d-md-none">
+    
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf5"></div>
+        <script type="text/javascript">
+            window.ramp.que.push(function () {
+                window.ramp.addTag("pwMobiLbBtf5");
+            })
+        </script>
+    
+</div>
+                    </div>
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_51">
+				<strong>Get EXP x8 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B080D28 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_52">
+				<strong>Get EXP x16 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B081128 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_53">
+				<strong>Get EXP x32 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B081528 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_54">
+				<strong>Get EXP x64 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B081928 
+
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_55">
+				<strong>Get EXP x128 (After Battle)</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>04000000 00051440 0B081D28
+</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+                
+	<table class="table table-hover table-borderless table-sm">
+		<tbody>
+		<tr class="table-active">
+			<td class="" id="content_56">
+				<strong>--SectionEnd: Multiplier Code--</strong>
+			</td>
+		</tr>
+		<tr>
+			<td class="">
+				<pre>00000000 00000000 00000000</pre>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+                
+            
+        </div>

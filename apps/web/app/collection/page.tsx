@@ -1,0 +1,1 @@
+import CollectionClient from '../../components/CollectionClient';export default function Collection(){return <main><div className="page-heading"><div><span className="eyebrow">Completion</span><h1>Collection Tracker</h1><p className="muted">Filter owned and missing entries. Progress syncs automatically when signed in.</p></div></div><CollectionClient/></main>}

@@ -1,0 +1,3 @@
+'use client';
+import {useEffect,useState} from 'react';import Link from 'next/link';import {getSettings,type RecentItem} from '../lib/userState';
+export default function RecentActivity(){const[items,setItems]=useState<RecentItem[]>([]);useEffect(()=>setItems(getSettings().recent??[]),[]);if(!items.length)return null;return <section><div className="section-title"><div><div className="eyebrow">Continue exploring</div><h2>Recently viewed</h2></div></div><div className="recent-strip">{items.slice(0,6).map(x=><Link className="card" href={`/digimon/${x.slug}`} key={x.slug}><strong>{x.name}</strong><small className="muted">Open Field Guide entry →</small></Link>)}</div></section>}

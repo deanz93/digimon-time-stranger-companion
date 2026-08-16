@@ -1,0 +1,4 @@
+'use client';
+import {useEffect,useState} from 'react';import Link from 'next/link';import {getFavorites} from '../lib/userState';
+type D={slug:string;name:string;imageUrl?:string;stage:string;attribute:string};
+export default function FavoritesClient(){const[rows,setRows]=useState<D[]>([]);useEffect(()=>{const fav=getFavorites();if(fav.length)fetch('/api/digimon?take=500').then(r=>r.json()).then((all:D[])=>setRows(all.filter(d=>fav.includes(d.slug))))},[]);return rows.length?<div className="collection-grid">{rows.map(d=><Link href={`/digimon/${d.slug}`} className="card collection-item" key={d.slug}>{d.imageUrl&&<img src={d.imageUrl} alt=""/>}<strong>{d.name}</strong><small className="muted">{d.stage} · {d.attribute}</small></Link>)}</div>:<div className="empty">No favorites yet. Open a Digimon and tap Favorite.</div>}

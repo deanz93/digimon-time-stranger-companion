@@ -1,0 +1,1 @@
+import GoalsClient from '../../components/GoalsClient';export default function Page(){return <main><div className="page-heading"><div><span className="eyebrow">Progress dashboard</span><h1>Evolution Goals</h1><p className="muted">Track targets, requirements, and completed evolutions.</p></div></div><GoalsClient/></main>}

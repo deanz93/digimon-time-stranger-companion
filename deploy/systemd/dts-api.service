@@ -1,0 +1,18 @@
+[Unit]
+Description=Digimon Time Stranger Companion API
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/projects/digimon-time-stranger-companion
+EnvironmentFile=/root/projects/digimon-time-stranger-companion/.env
+Environment=NODE_ENV=production
+Environment=PORT=4000
+Environment=PATH=/root/.nvm/versions/node/v22.23.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/root/.nvm/versions/node/v22.23.2/bin/pnpm --filter @dts/api start
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

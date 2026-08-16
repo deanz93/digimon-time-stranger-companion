@@ -1,0 +1,2 @@
+import PlannerClient from '../../components/PlannerClient';
+export default async function Planner({searchParams}:{searchParams:Promise<{from?:string}>}){const p=await searchParams;return <main><header className="page-heading"><div><div className="eyebrow">Route finder</div><h1>Evolution Planner</h1><p className="muted">Choose any two Digimon to calculate the shortest verified evolution route.</p></div><div className="count-pill"><strong>1,120</strong> connected paths</div></header><PlannerClient initialFrom={p.from??''}/></main>}

@@ -1,0 +1,1 @@
+import AccountClient from '../../components/AccountClient';export default function Page(){return <main><div className="section-title"><div><h1>Account & Cloud Sync</h1><p className="muted">Your companion progress follows you automatically.</p></div></div><AccountClient/></main>}

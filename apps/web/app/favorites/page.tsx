@@ -1,0 +1,1 @@
+import FavoritesClient from '../../components/FavoritesClient';export default function Page(){return <main><header className="page-heading"><div><div className="eyebrow">Personal library</div><h1>Favorites</h1><p className="muted">Your saved Digimon and personal notes.</p></div></header><FavoritesClient/></main>}

@@ -1,0 +1,1 @@
+import GuideClient from '../../components/GuideClient';export default function Page(){return <main><header className="page-heading"><div><div className="eyebrow">Mission companion</div><h1>Complete Guide & Walkthrough</h1><p className="muted">Track every main mission, side mission, post-game questline and downloadable episode.</p></div></header><GuideClient/></main>}
